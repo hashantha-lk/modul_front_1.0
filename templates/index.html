@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thullex Markup Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</head>
+
+<body>
+    <header>Thullex &reg;</header>
+    <h1>&nbsp;Upload Image &#x279C; Select Tool &#x279C; Draw & Mark On It &#x279C; Save &#x2710;&#x301C;</h1>
+    <input type="file" id="file-input">
+    <button id="line" onclick="setDrawStraightLineMode()">Line &#x23AF;</button>
+    <button id="curve" onclick="setDrawCurveMode()">Curve &#x301C;</button>
+    <button id="point" onclick="setMarkPointMode()">Point &#128205;</button>
+    <button id="undo" onclick="undoLastAction()">Undo &hookleftarrow;</button>
+    <button id="redo" onclick="redoLastAction()">Redo &hookrightarrow;</button>
+    <button id="clear" onclick="clearCanvas()">Clear &#10240;</button>
+    <button id="save" onclick="saveCanvas()">Save &#x1F4BE;</button>
+    <div id="canvas-container">
+        <canvas id="canvas" width="1400" height="1000"></canvas>
+    </div>
+</body>
+
+</html>

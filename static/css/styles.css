@@ -1,0 +1,67 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Robota', sans-serif;
+}
+
+#canvas-container {
+    border: 2px solid red;
+    width: 1400px;
+    height: 1000px;
+    position: relative;
+}
+
+header {
+    background: conic-gradient(#553c9a 0%, #553c9a 33%, #ee4b2b 33%, #ee4b2b 66%, #003acb 66%, #00cb5b 99%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h1 {
+    background: linear-gradient(to right, royalblue, royalblue);
+    color: white;
+    text-transform: lowercase;
+    font-size: 2em;
+    padding: 2px;
+    text-align: left;
+}
+
+
+button {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px;
+    border-color: royalblue;
+    white-space: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+#undo:hover {
+    background-color: red;
+    color: white;
+}
+
+#redo:hover {
+    background-color: green;
+    color: white;
+}
+
+#clear:hover {
+    background-color: darkorange;
+    color: white;
+}
